@@ -1,0 +1,81 @@
+.button_plus {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  cursor: pointer;
+ 
+  border: 2px solid #6be96b;
+  /* Mittig */
+
+}
+
+.button_plus:after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  rotate: 45;
+  height: 4px;
+  width: 50%;
+  background: #6BE96B;
+  
+}
+
+.button_plus:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #6BE96B;
+  height: 50%;
+  width: 4px;
+}
+
+.button_plus:hover:before,
+.button_plus:hover:after {
+  background: #fff;
+  transition: 0.2s;
+}
+
+.button_plus:hover {
+  background-color: #6BE96B;
+  transition: 0.2s;
+}
+
+
+.button_minus {
+  position: absolute;
+   margin-top: 5px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #e7225d;
+  /* Mittig */
+  left: 94%;
+}
+
+.button_minus:after {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  rotate: 45;
+  height: 4px;
+  width: 50%;
+  background: #e7225d;
+  
+}
+
+
+
+.button_minus:hover:before,
+.button_minus:hover:after {
+  background: #fff;
+  transition: 0.2s;
+}
+
+.button_minus:hover {
+  background-color: #e7225d;
+  transition: 0.2s;
+}
