@@ -6,6 +6,8 @@
   "imageUrl": "/images/merbabu.jpg",
   "review": 200,
   "track": "Suwanting",
+  "duration": 3,
+  "unit": "Day",
   "price": 2,
   "asurance": 1,
   "features": [

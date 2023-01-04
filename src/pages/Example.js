@@ -4,7 +4,8 @@ import React from "react";
 // import InputDate from "elements/Form/InputDate";
 // import Dropdown from "elements/Dropdown";
 // import InputText from "elements/Form/InputText";
-import BookingInformation from "../parts/Booking Information/BookingInformation";
+// import Payment from "../parts/Checkout/Payment";
+import BookingInformation from "../parts/Checkout/Booking Information/BookingInformation";
 export default function Example() {
   // const [getNavValue, setNavValue] = useState("");
   // const clicked = () => {
@@ -22,5 +23,5 @@ export default function Example() {
   //     </div>
   //   </div>
   // );
-  return <BookingInformation />;
+  return <BookingInformation/>;
 }

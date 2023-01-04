@@ -1,12 +1,18 @@
 import React from "react";
-import { IconCalender } from "../../assets";
-import Button from "../../elements/Button";
+import Button from "../../../elements/Button";
 export default function ReservationSummary({ data }) {
   const priceHiking = data.price * 3;
   const priceAsurance = data.asurance * 3;
   const totalPrice = priceHiking + priceAsurance;
   return (
-    <div className="col-5">
+    <div
+      className="col-4"
+      style={{
+        backgroundColor: "white",
+        borderRadius: 8,
+        maxHeight: 600,
+      }}
+    >
       <h3
         className="m-3"
         style={{
@@ -47,7 +53,7 @@ export default function ReservationSummary({ data }) {
                 color: "#0B165B",
                 fontFamily: "Poppins",
                 fontWeight: 500,
-                fontSize: 18,
+                fontSize: 14,
               }}
             >
               Sun, 22 Nov 2022
@@ -61,29 +67,23 @@ export default function ReservationSummary({ data }) {
                 fontSize: 16,
               }}
             >
-              TOTAL LONG OF STAY :
+              DURATION :
             </h6>
             <h6
               className="date-out"
               style={{
                 color: "#0B165B",
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: 500,
                 fontFamily: "Poppins",
                 float: "left",
                 marginTop: 2,
               }}
             >
-              3
-            </h6>{" "}
-            <img
-              src={IconCalender}
-              style={{ width: 21 }}
-              alt="long_stay"
-              className="ml-2"
-            />
+              {data.duration} {data.unit}
+            </h6>
             <h6
-              className="checkin mt-4"
+              className="checkin mt-5"
               style={{
                 fontWeight: 700,
                 fontFamily: "Poppins",
@@ -99,7 +99,7 @@ export default function ReservationSummary({ data }) {
                 color: "#0B165B",
                 fontFamily: "Poppins",
                 fontWeight: 500,
-                fontSize: 18,
+                fontSize: 14,
               }}
             >
               {data.name}
@@ -121,7 +121,7 @@ export default function ReservationSummary({ data }) {
                 color: "#0B165B",
                 fontFamily: "Poppins",
                 fontWeight: 500,
-                fontSize: 18,
+                fontSize: 14,
               }}
             >
               {data.track}
@@ -143,7 +143,7 @@ export default function ReservationSummary({ data }) {
               className="date-out"
               style={{
                 color: "#0B165B",
-                fontSize: 18,
+                fontSize: 14,
                 fontFamily: "Poppins",
                 fontWeight: 500,
               }}
@@ -209,10 +209,10 @@ export default function ReservationSummary({ data }) {
               $ {totalPrice}
             </h5>
           </div>
-          <Button className="btn mt-2" hasShadow isPrimary isBlock>
-            Request to Book
-          </Button>
         </div>
+        <Button className="btn mt-3 mb-5" hasShadow isPrimary isBlock>
+          Request to Book
+        </Button>
       </div>
     </div>
   );

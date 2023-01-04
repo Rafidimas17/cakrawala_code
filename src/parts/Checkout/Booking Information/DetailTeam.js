@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import InputText from "../../elements/Form/InputText";
-import "./booking.scss";
+import InputText from "../../../elements/Form/InputText";
+// import "./booking.scss";
 export default function DetailTeam({ data }) {
   const [getMember, setMember] = useState([]);
   const handleAdd = () => {
@@ -20,7 +20,10 @@ export default function DetailTeam({ data }) {
   console.log("data-", getMember);
 
   return (
-    <div className="col-7 pr-5">
+    <div
+      className="col-7 pr-3 mr-5"
+      style={{ backgroundColor: "white", borderRadius: 8 }}
+    >
       <div className="card m-3">
         <div className="detail ">
           <h3

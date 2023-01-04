@@ -1,5 +1,5 @@
 import React from "react";
-import BookingDetail from "../../json/bookingInformation.json";
+import BookingDetail from "../../../json/bookingInformation.json";
 import DetailTeam from "./DetailTeam";
 import ReservationSummary from "./ReservationSummary";
 import "./booking.scss";
@@ -8,7 +8,7 @@ export default function BookingInformation() {
     <section className="spacing-sm mt-5">
       <div className="container ">
         <div className="row">
-          <DetailTeam data={BookingDetail} />
+          <DetailTeam />
           <ReservationSummary data={BookingDetail} />
         </div>
       </div>
