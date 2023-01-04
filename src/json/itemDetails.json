@@ -51,6 +51,20 @@
       "unit": "Node",
       "name": "Shelter",
       "imageUrl": "/images/home.svg"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "qty": "4",
+      "unit": "Node",
+      "name": "Shelter",
+      "imageUrl": "/images/home.svg"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "qty": "4",
+      "unit": "Node",
+      "name": "Shelter",
+      "imageUrl": "/images/home.svg"
     }
   ],
   "activities": [
