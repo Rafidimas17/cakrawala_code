@@ -76,6 +76,31 @@ export default function PaymentDetail({ dataPayment }) {
             <h6>No Telephone</h6>
           </div>
         </div>
+        <table
+          className="table pr-3"
+          style={{ border: "1px solid black", height: 50 }}
+        >
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>No ID</th>
+            <th>No Telephone</th>
+          </tr>
+          <tr style={{ border: "1px solid black", height: 50 }}>
+            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
+              Rafi Dimas Ariyanto
+            </td>
+            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
+              Jl.Bendo No.65,Jombang
+            </td>
+            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
+              1234234567890456
+            </td>
+            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
+              6281888731822
+            </td>
+          </tr>
+        </table>
 
         {dataPayment.detailTeam.map((member, index) => {
           return (

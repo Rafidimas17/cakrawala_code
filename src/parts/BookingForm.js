@@ -83,9 +83,9 @@ class BookingForm extends Component {
     const { itemDetails } = this.props;
 
     return (
-      <div className="card bordered" style={{ padding: "60px 80px" }}>
+      <div className="card bordered" style={{ padding: "20px 40px" }}>
         <h4 className="mb-3">Start Booking</h4>
-        <h5 className="h2 text-teal mb-4">
+        <h5 className="h2 mb-4" style={{ color: "#6ECCAF" }}>
           ${itemDetails.price}{" "}
           <span className="text-gray-500 font-weight-light">
             per {itemDetails.unit}
@@ -106,8 +106,13 @@ class BookingForm extends Component {
         <InputDate onChange={this.updateData} name="date" value={data.date} />
         <label htmlFor="date">Choose Track</label>
         <Form.Select className="select">
-          <option>Select Track</option>
-          <option value="1">Suwanting</option>
+          {itemDetails.track.map((street, index) => {
+            return (
+              <option key={`street-${index}`} value="1">
+                {street.nameTrack}
+              </option>
+            );
+          })}
         </Form.Select>
         <h6
           className="text-gray-500 font-weight-light"
@@ -124,7 +129,7 @@ class BookingForm extends Component {
         </h6>
 
         <Button
-          className="btn"
+          className="btn mb-3"
           hasShadow
           isPrimary
           isBlock

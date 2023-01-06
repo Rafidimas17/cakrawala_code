@@ -2,6 +2,28 @@
   "_id": "asd1293uasdads1",
   "name": "Merbabu Mountain",
   "type": "Hotel",
+  "track": [
+    {
+      "id": "asd1293uasdads1",
+      "nameTrack": "Suwanting"
+    },
+    {
+      "id": "asd1293uasdads1",
+      "nameTrack": "Wekas"
+    },
+    {
+      "id": "asd1293uasdads1",
+      "nameTrack": "Selo"
+    },
+    {
+      "id": "asd1293uasdads1",
+      "nameTrack": "Cuntel"
+    },
+    {
+      "id": "asd1293uasdads1",
+      "nameTrack": "Thekelan"
+    }
+  ],
   "imageUrls": [
     {
       "_id": "asd1293uasdads1",
