@@ -1,8 +1,9 @@
 import React from "react";
-import ReservationSummary from "./Booking Information/ReservationSummary";
+import ReservationSummary from "../Booking Information/ReservationSummary";
 import PaymentDetail from "./PaymentDetail";
-import dataDetail from "../../json/paymentDetail.json";
-import DataBooking from "../../json/bookingInformation.json";
+import "./Payment.scss";
+import dataDetail from "../../../json/paymentDetail.json";
+import DataBooking from "../../../json/bookingInformation.json";
 export default function Payment() {
   return (
     <div className="spacing-sm mt-5">

@@ -1,21 +1,22 @@
+
 .main{
-    text-align: center;
-    background-color: rgba(248, 248, 248, 0.575);
-    padding: auto;
-    margin: auto;
+    width: 100%;
+    background-color: rgba(116, 113, 113, 0.575);
     height: 100%;
-    border: 1px solid black;
-    width: 78%;
-    position: fixed;
-    top: 25px;
+    width: 130%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    
 }
 .popup{
     height: 400px;
-    width: 50%;
+    width: 100%;
     background-color: white;
-    position: fixed;
+    position: relative;
     top: 25%;
-    right: 25%;
+    // right: 25%;
 }
 .popup-header{
     display: flex;
@@ -25,7 +26,6 @@
 }
 .close{
     margin-top: 25px;
-    color: white;
     cursor: pointer;
 
 }

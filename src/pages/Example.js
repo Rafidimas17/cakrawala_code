@@ -4,7 +4,7 @@ import React from "react";
 // import InputDate from "elements/Form/InputDate";
 // import Dropdown from "elements/Dropdown";
 // import InputText from "elements/Form/InputText";
-import Payment from "../parts/Checkout/Payment";
+import Payment from "../parts/Checkout/Payment/Payment";
 // import BookingInformation from "../parts/Checkout/Booking Information/BookingInformation";
 export default function Example() {
   // const [getNavValue, setNavValue] = useState("");

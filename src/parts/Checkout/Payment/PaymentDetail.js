@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Payment.scss";
 export default function PaymentDetail({ dataPayment }) {
   const [getPopup, setPopup] = useState(false);
   let memberName = dataPayment.detailTeam.nameMember;
@@ -14,9 +13,9 @@ export default function PaymentDetail({ dataPayment }) {
 
   return (
     <div
-      className="col-7 pr-3 mr-5"
+      className="col-7  mr-5"
       style={{
-        width: 1000,
+        width: "100%",
         borderRadius: 8,
         backgroundColor: "white",
       }}
@@ -138,14 +137,16 @@ export default function PaymentDetail({ dataPayment }) {
         <div>
           {getPopup ? (
             <div className="main">
-              <div className="popup-header">
-                <h1>popup</h1>
-                <h1 className="close" onClick={closePopup}>
-                  X
-                </h1>
-              </div>
-              <div>
-                <p>This is simple popup in react js</p>
+              <div className="popup">
+                <div className="popup-header">
+                  <h1>popup</h1>
+                  <h1 className="close" onClick={closePopup}>
+                    X
+                  </h1>
+                </div>
+                <div>
+                  <p>This is simple popup in react js</p>
+                </div>
               </div>
             </div>
           ) : (
