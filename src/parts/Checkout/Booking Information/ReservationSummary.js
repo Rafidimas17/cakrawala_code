@@ -11,6 +11,7 @@ export default function ReservationSummary({ data }) {
         backgroundColor: "white",
         borderRadius: 8,
         maxHeight: 600,
+        position: "static",
       }}
     >
       <h3

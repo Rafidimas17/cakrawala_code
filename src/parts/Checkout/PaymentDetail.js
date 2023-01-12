@@ -1,8 +1,16 @@
-import React from "react";
-
+import React, { useState } from "react";
+import "./Payment.scss";
 export default function PaymentDetail({ dataPayment }) {
+  const [getPopup, setPopup] = useState(false);
   let memberName = dataPayment.detailTeam.nameMember;
   console.log(memberName);
+
+  const handleClickPayment = () => {
+    setPopup(!getPopup);
+  };
+  const closePopup = () => {
+    setPopup(false);
+  };
 
   return (
     <div
@@ -62,88 +70,88 @@ export default function PaymentDetail({ dataPayment }) {
         >
           Booking Details
         </h3>
-        <div className="row">
-          <div className="col">
-            <h6 className="titleTable ml-3">Name</h6>
-          </div>
-          <div className="col">
-            <h6>Address</h6>
-          </div>
-          <div className="col">
-            <h6>No ID</h6>
-          </div>
-          <div className="col">
-            <h6>No Telephone</h6>
-          </div>
-        </div>
-        <table
-          className="table pr-3"
-          style={{ border: "1px solid black", height: 50 }}
-        >
-          <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>No ID</th>
-            <th>No Telephone</th>
-          </tr>
-          <tr style={{ border: "1px solid black", height: 50 }}>
-            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
-              Rafi Dimas Ariyanto
-            </td>
-            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
-              Jl.Bendo No.65,Jombang
-            </td>
-            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
-              1234234567890456
-            </td>
-            <td style={{ border: "1px solid black", height: 50, fontSize: 12 }}>
-              6281888731822
-            </td>
-          </tr>
-        </table>
 
-        {dataPayment.detailTeam.map((member, index) => {
-          return (
-            <div key={`member-${index}`} className="row mt-2">
-              <div className="col-3">
-                <h6
-                  className="titleTable ml-3"
-                  style={{ fontSize: 10, fontFamily: "Poppins" }}
+        <table className="table pr-3" style={{ height: 50 }}>
+          <tr>
+            <th style={{ textAlign: "center" }}>Name</th>
+            <th style={{ textAlign: "center" }}>Address</th>
+            <th style={{ textAlign: "center" }}>No ID</th>
+            <th style={{ textAlign: "center" }}>No Phone</th>
+          </tr>
+          {dataPayment.detailTeam.map((member, index) => {
+            return (
+              <tr
+                key={`member-${index}`}
+                className="rowTableName"
+                style={{ height: 50 }}
+              >
+                <td
+                  style={{
+                    height: 50,
+                    fontSize: 12,
+                    fontFamily: "Poppins",
+                    textAlign: "center",
+                  }}
                 >
                   {member.nameMember}
-                </h6>
-              </div>
-              <div className="col">
-                <h6
-                  className="titleTable"
-                  style={{ fontSize: 10, fontFamily: "Poppins" }}
+                </td>
+                <td
+                  style={{
+                    height: 50,
+                    fontSize: 12,
+
+                    fontFamily: "Poppins",
+                    textAlign: "center",
+                  }}
                 >
                   {member.addressMember}
-                </h6>
-              </div>
-              <div className="col">
-                <h6
-                  className="titleTable"
+                </td>
+                <td
                   style={{
-                    fontSize: 10,
+                    height: 50,
+                    fontSize: 12,
+
                     fontFamily: "Poppins",
-                    textAlign: "left",
+                    textAlign: "center",
                   }}
                 >
                   {member.numberIdMember}
-                </h6>
-              </div>
-              <div className="col">
-                <h6
-                  className="titleTable"
-                  style={{ fontSize: 10, fontFamily: "Poppins" }}
+                </td>
+                <td
+                  style={{
+                    height: 50,
+                    fontSize: 12,
+
+                    fontFamily: "Poppins",
+                    textAlign: "center",
+                  }}
                 >
                   {member.telephoneMember}
-                </h6>
+                </td>
+              </tr>
+            );
+          })}
+        </table>
+        <button id="btnSelectPayment" onClick={handleClickPayment}>
+          Select Payment
+        </button>
+        <div>
+          {getPopup ? (
+            <div className="main">
+              <div className="popup-header">
+                <h1>popup</h1>
+                <h1 className="close" onClick={closePopup}>
+                  X
+                </h1>
+              </div>
+              <div>
+                <p>This is simple popup in react js</p>
               </div>
             </div>
-          );
-        })}
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   );
