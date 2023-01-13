@@ -11,7 +11,9 @@ import IconCalender from "./icon/calender.svg";
 import IconMountain from "./icon/Mountain.svg";
 import hiking from "./image/hiking.jpg";
 import frame from "./image/hero-frame.png";
+import IconMandiri from "./icon/BankMandiri.svg";
 export {
+  IconMandiri,
   hiking,
   RegisterBg,
   LoginBg,

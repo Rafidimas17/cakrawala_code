@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IconMandiri } from "../../../assets";
+import Form from "react-bootstrap/Form";
 export default function PaymentDetail({ dataPayment }) {
   const [getPopup, setPopup] = useState(false);
   let memberName = dataPayment.detailTeam.nameMember;
@@ -131,28 +133,23 @@ export default function PaymentDetail({ dataPayment }) {
             );
           })}
         </table>
-        <button id="btnSelectPayment" onClick={handleClickPayment}>
-          Select Payment
-        </button>
-        <div>
-          {getPopup ? (
-            <div className="main">
-              <div className="popup">
-                <div className="popup-header">
-                  <h1>popup</h1>
-                  <h1 className="close" onClick={closePopup}>
-                    X
-                  </h1>
-                </div>
-                <div>
-                  <p>This is simple popup in react js</p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
-        </div>
+        <h6 className="ml-3" style={{ fontFamily: "Poppins" }}>
+          Select Payment :
+        </h6>
+        <Form.Select className="select">
+          <option value="1">
+            <p className="textBank mt-2">Bank Mandiri</p>
+          </option>
+          <option value="2">
+            <p className="textBank mt-2 ml-2">Bank BCA</p>
+          </option>
+          <option value="3">
+            <p className="textBank mt-2">Bank BNI</p>
+          </option>
+          <option value="4">
+            <p className="textBank mt-2">Bank BRI</p>
+          </option>
+        </Form.Select>
       </div>
     </div>
   );

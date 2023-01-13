@@ -1,31 +1,23 @@
+.select{
+    width: 100%;
 
-.main{
-    width: 100%;
-    background-color: rgba(116, 113, 113, 0.575);
-    height: 100%;
-    width: 130%;
-    position: absolute;
-    top: 0;
-    left: 0;
-   
-    
 }
-.popup{
-    height: 400px;
+.main-button{
     width: 100%;
-    background-color: white;
-    position: relative;
-    top: 25%;
-    // right: 25%;
-}
-.popup-header{
+    height: 20%;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    cursor: pointer;
+    border-radius:8px;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px 0 15px;
-    border-bottom: 2px solid black;
+    .textBank{
+        font-family: "Poppins";
+        font-size: 15px;
+        color: rgb(22, 22, 22);
+        font-weight: 400;
+    }
 }
-.close{
-    margin-top: 25px;
-    cursor: pointer;
-
+.imageBank{
+    width: 10%;
 }
