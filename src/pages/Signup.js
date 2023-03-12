@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../elements/Button";
+// import Button from "../elements/Button";
 import CardWelcome from "../parts/CardWelcome";
-import Header from "../parts/Header";
+// import Header from "../parts/Header";
 export default function Signup() {
   return (
     <>
@@ -19,7 +20,7 @@ export default function Signup() {
               </p>
               <form className="input-group">
                 <div className="form-group">
-                  <label for="exampleInputUsername">Username</label>
+                  <h4 for="exampleInputUsername">Username</h4>
                   <input
                     type="text"
                     className="form-control"
@@ -29,7 +30,7 @@ export default function Signup() {
                   />
                 </div>
                 <div className="form-group">
-                  <label for="exampleInputEmail">Email</label>
+                  <h4 for="exampleInputEmail">Email</h4>
                   <input
                     type="text"
                     className="form-control"
@@ -39,7 +40,7 @@ export default function Signup() {
                   />
                 </div>
                 <div className="form-group">
-                  <label for="exampleInputPassword">Password</label>
+                  <h4 for="exampleInputPassword">Password</h4>
                   <input
                     type="password"
                     className="form-control"
@@ -48,12 +49,29 @@ export default function Signup() {
                   />
                 </div>
                 <div className="form-group">
-                  <label for="exampleInputPassword" hidden></label>
-                  <button className="btn-signup">
-                    <a href="#" className="signup-link">
-                      Create account
-                    </a>
-                  </button>
+                  <h4 for="exampleInputPassword" hidden></h4>
+                  <Button
+                    // id="btn-signup"
+                    className="btn btn-shadow mt-4"
+                    href="/login"
+                    type="link"
+                    style={{
+                      borderRadius: 8,
+                      backgroundColor: "#3252DF",
+                      color: "white",
+                      width: "168px",
+                      height:"52px",
+                      padding: "auto",
+                      boxShadow:" 0px 4px 4px rgba(0, 0, 0, 0.25)",
+                      fontSize:"15px",
+                      fontFamily:"Poppins"
+                    }}
+                  >
+                    Create account
+                  </Button>
+                  {/* <button className="btn-signup">
+                    <a href="/login" className="signup-link"></a>
+                  </button> */}
                 </div>
               </form>
             </div>
