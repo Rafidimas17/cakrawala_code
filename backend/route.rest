@@ -1,0 +1,10 @@
+POST http://localhost:5000/daftar
+Content-Type: application/json
+
+{
+    "username":"rafidimas",
+    "email":"rafidimas1706@gmail.com",
+    "password":"herotayo27"
+}
+###
+GET http://localhost:5000/verify-email/c11e9190ba166365f3ad9fcf6dd0efac4f04beb2918265e225fa039f3d115763beb1b731d22dea4d05e387186d5bc5b0c11736bc58df4e0238930551b849f91c

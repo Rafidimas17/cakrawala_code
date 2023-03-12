@@ -46,8 +46,17 @@ export default function Header(props) {
                   </Button>
                 </li>
                 <li className={`nav-item${getNavLinkClass("/agents")}`}>
-                  <Button className="nav-link" type="link" href="/agents">
-                    Agents
+                  <Button
+                    className="nav-link"
+                    type="link"
+                    href="/login"
+                    style={{
+                      borderRadius: 15,
+                      backgroundColor: "#3252DF",
+                      color: "white",
+                    }}
+                  >
+                    Login
                   </Button>
                 </li>
               </ul>

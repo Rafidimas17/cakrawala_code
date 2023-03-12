@@ -115,15 +115,15 @@ class BookingForm extends Component {
           })}
         </Form.Select>
         <h6
-          className="text-gray-500 font-weight-light"
-          style={{ marginBottom: 40 }}
+          className="text-gray-700 mt-3"
+          style={{ marginBottom: 30,fontWeight:370,fontFamily:"Poppins"}}
         >
           You will pay{" "}
-          <span className="text-gray-900">
+          <span className="text-gray-900" style={{fontWeight:600 }}>
             ${itemDetails.price * data.duration} USD
           </span>{" "}
           per{" "}
-          <span className="text-gray-900">
+          <span className="text-gray-900" style={{fontWeight:600 }}>
             {data.duration} {itemDetails.unit}
           </span>
         </h6>

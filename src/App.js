@@ -5,12 +5,17 @@ import LandingPage from "./pages/LandingPage";
 import Example from "./pages/Example";
 import DetailsPage from "./pages/DetailsPage";
 import Checkout from "./pages/Checkout";
-
+import LoginPage from "./pages/Login";
+import SignupPage from "./pages/Signup";
+import forgotPassword from "./pages/forgotpassword";
 function App() {
   return (
     <div className="App">
       <Router>
         <Route exact path="/" component={LandingPage}></Route>
+        <Route path="/login" component={LoginPage}></Route>
+        <Route path="/signup" component={SignupPage}></Route>
+        <Route path="/forgotpassword" component={forgotPassword}></Route>
         <Route exact path="/properties/:id" component={DetailsPage}></Route>
         <Route path="/checkout" component={Checkout}></Route>
         <Route path="/example" component={Example}></Route>

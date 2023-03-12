@@ -4,8 +4,10 @@ import React from "react";
 // import InputDate from "elements/Form/InputDate";
 // import Dropdown from "elements/Dropdown";
 // import InputText from "elements/Form/InputText";
+// import Confirmation from "../parts/Checkout/Confirma"
+import CardWelcome from "../parts/CardWelcome";
 import Payment from "../parts/Checkout/Payment/Payment";
-// import BookingInformation from "../parts/Checkout/Booking Information/BookingInformation";
+import BookingInformation from "../parts/Checkout/Booking Information/BookingInformation";
 export default function Example() {
   // const [getNavValue, setNavValue] = useState("");
   // const clicked = () => {
@@ -23,5 +25,5 @@ export default function Example() {
   //     </div>
   //   </div>
   // );
-  return <Payment />;
+  return <CardWelcome />;
 }
