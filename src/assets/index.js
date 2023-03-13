@@ -12,6 +12,8 @@ import IconMountain from "./icon/Mountain.svg";
 import hiking from "./image/hiking.jpg";
 import frame from "./image/hero-frame.png";
 import IconMandiri from "./icon/BankMandiri.svg";
+import IconGoogle from "./icon/google.svg";
+// import IconGoogle from "./icon/google.svg";
 export {
   IconMandiri,
   hiking,
@@ -27,4 +29,5 @@ export {
   IconMountain,
   IconCalender,
   frame,
+  IconGoogle,
 };
